@@ -28,6 +28,20 @@ The framework is evaluated using **63 controlled experiments** across **Finance*
 
 ---
 
+## Quick Start
+
+```bash
+git clone https://github.com/kallamrameshbabu/governance-aware-hybrid-data-quality.git
+cd governance-aware-hybrid-data-quality
+
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+jupyter notebook
+
+---
+
 # Research Contributions
 
 This research makes four primary contributions.
@@ -259,3 +273,10 @@ https://github.com/kallamrameshbabu
 ORCID:
 
 https://orcid.org/0009-0008-5220-1775
+
+## Notebooks
+
+1. [Baseline Prototype](notebooks/01_Baseline_Prototype.ipynb)
+2. [Hybrid Decision Engine](notebooks/02_Hybrid_Decision_Engine.ipynb)
+
+Run them in numerical order.
