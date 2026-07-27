@@ -1,1 +1,16 @@
+name: governance-aware-hybrid-data-quality
 
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - joblib
+  - openpyxl
+  - jupyter
+  - pip
