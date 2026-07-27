@@ -1,1 +1,38 @@
-
+{
+  "policy_id": "W08",
+  "policy_name": "Governance-Aware Hybrid Decision Policy",
+  "version": "1.0.0",
+  "description": "Deterministic evidence-fusion policy selected consistently during nested experiment-level cross-validation.",
+  "weights": {
+    "rule_risk": 0.20,
+    "ai_consensus": 0.55,
+    "ai_prediction_vote": 0.20,
+    "uncertainty": 0.05
+  },
+  "decision_threshold": 0.45,
+  "score_definition": "weighted_sum",
+  "score_range": {
+    "minimum": 0.0,
+    "maximum": 1.0
+  },
+  "decision_rule": {
+    "anomaly": "hybrid_score >= decision_threshold",
+    "normal": "hybrid_score < decision_threshold"
+  },
+  "selection_method": {
+    "strategy": "constrained_nested_optimization",
+    "primary_objective": "maximize_macro_f1",
+    "operational_constraint": "control_false_positive_rate_relative_to_ai_consensus",
+    "outer_folds": 3,
+    "inner_folds": 3,
+    "split_unit": "experiment"
+  },
+  "governance_properties": {
+    "deterministic": true,
+    "auditable": true,
+    "human_readable": true,
+    "reproducible": true,
+    "learned_meta_model": false
+  },
+  "claim_boundary": "The policy is designed for transparent governance-aware evidence fusion and is not claimed to outperform all learned fusion or anomaly-detection methods."
+}
