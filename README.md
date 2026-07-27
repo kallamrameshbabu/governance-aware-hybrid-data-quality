@@ -3,7 +3,7 @@
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
-![Status](https://img.shields.io/badge/Research-Published-success)
+![Status](https://img.shields.io/badge/Research-Reproducible-success)
 ![Domain](https://img.shields.io/badge/Data%20Quality-Governance-orange)
 
 ---
