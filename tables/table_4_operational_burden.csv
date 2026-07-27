@@ -1,0 +1,5 @@
+Method,Flagged records,Flagged rate,True positives,False positives,Missed anomalies,Anomaly capture rate,False reviews per TP
+AI consensus,118799,17.3%,68720,50079,102549,40.1%,0.729
+Hybrid V3,103554,15.1%,41621,61933,129648,24.3%,1.488
+Hybrid V1,159956,23.3%,56678,103278,114591,33.1%,1.822
+Rule-only,42579,6.2%,3945,38634,167324,2.3%,9.793

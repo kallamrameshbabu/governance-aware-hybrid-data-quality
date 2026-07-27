@@ -1,0 +1,4 @@
+Outer fold,Candidate,Threshold,Rule weight,AI consensus weight,AI vote weight,Uncertainty weight,Inner F1,Inner FPR,Constraint satisfied
+1,W08,0.450,0.200,0.550,0.200,0.050,0.276,0.100,True
+2,W08,0.450,0.200,0.550,0.200,0.050,0.289,0.098,True
+3,W08,0.450,0.200,0.550,0.200,0.050,0.278,0.097,True

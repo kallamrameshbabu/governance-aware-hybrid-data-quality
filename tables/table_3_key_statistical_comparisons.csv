@@ -1,0 +1,7 @@
+Metric,Comparison,Mean difference,95% bootstrap CI,Adjusted p-value,Significance
+F1,Hybrid V3 − AI consensus,-0.0254,"[-0.0748, 0.0187]",0.482,ns
+Precision,Hybrid V3 − AI consensus,0.0020,"[-0.0074, 0.0114]",0.581,ns
+Recall,Hybrid V3 − AI consensus,-0.0393,"[-0.1009, 0.0155]",1.000,ns
+False Positive Rate,Hybrid V3 − AI consensus,0.0133,"[0.0081, 0.0186]",<0.001,***
+False Positive Rate,Hybrid V3 − Hybrid V1,-0.0566,"[-0.0656, -0.0469]",<0.001,***
+F1,Hybrid V3 − Rule-only,0.2419,"[0.1924, 0.2951]",<0.001,***
