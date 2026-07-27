@@ -206,7 +206,7 @@ The repository includes:
 - publication-ready figures
 - manuscript artifacts
 
-Users can reproduce every experiment described in the accompanying paper.
+Users can reproduce the experimental workflow after downloading the source datasets and placing them in the documented local paths.
 
 ---
 
