@@ -1,0 +1,66 @@
+version: "1.0"
+
+taxonomy:
+  completeness:
+    description: Missing, absent, or incomplete required values.
+    examples:
+      - null_required_field
+      - empty_identifier
+      - missing_category
+
+  validity:
+    description: Values that violate accepted formats, ranges, or domain constraints.
+    examples:
+      - invalid_date
+      - negative_quantity
+      - impossible_numeric_value
+      - malformed_code
+
+  consistency:
+    description: Conflicts between logically related fields or records.
+    examples:
+      - incompatible_categories
+      - contradictory_status
+      - inconsistent_totals
+      - cross_field_mismatch
+
+  uniqueness:
+    description: Duplicate or unexpectedly repeated records or identifiers.
+    examples:
+      - duplicate_record
+      - duplicate_transaction
+      - repeated_identifier
+
+  statistical_outlier:
+    description: Observations that deviate substantially from learned data distributions.
+    detectors:
+      - isolation_forest
+      - local_outlier_factor
+
+  consensus_anomaly:
+    description: Records identified as anomalous through agreement among AI detectors.
+    evidence_source: ai_consensus
+
+  uncertainty:
+    description: Predictions with insufficient confidence for automatic disposition.
+    evidence_source: prediction_uncertainty
+
+severity_levels:
+  low:
+    description: Weak evidence with limited operational impact.
+  medium:
+    description: Material evidence requiring review or repair.
+  high:
+    description: Strong evidence requiring quarantine or escalation.
+  critical:
+    description: Severe integrity or governance risk requiring immediate escalation.
+
+operational_actions:
+  accept:
+    description: Permit the record to continue through the pipeline.
+  repair:
+    description: Apply or request a controlled corrective action.
+  quarantine:
+    description: Isolate the record from downstream trusted datasets.
+  escalate:
+    description: Route the record for human or governance review.
