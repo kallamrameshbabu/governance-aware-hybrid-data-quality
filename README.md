@@ -26,8 +26,6 @@ Unlike traditional anomaly detection systems that focus solely on predictive acc
 
 The framework is evaluated using **63 controlled experiments** across **Finance**, **Healthcare**, and **Retail** datasets using nested experiment-level cross-validation and rigorous statistical inference.
 
----
-
 ## Quick Start
 
 ```bash
@@ -40,7 +38,7 @@ pip install -r requirements.txt
 
 jupyter notebook
 
----
+```
 
 # Research Contributions
 
