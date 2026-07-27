@@ -1,0 +1,58 @@
+version: "1.0"
+
+project:
+  name: governance-aware-hybrid-data-quality
+  evaluation_unit: experiment
+  total_experiments: 63
+  experiments_per_domain: 21
+
+datasets:
+  finance:
+    name: Bank Marketing
+    domain: finance
+    source: UCI Machine Learning Repository
+    local_files:
+      - data/raw/bank/bank-full.csv
+      - data/raw/bank/bank.csv
+      - data/raw/bank/bank-names.txt
+    delimiter: ";"
+    target_column: y
+    experiments: 21
+    redistribution_allowed: false
+
+  healthcare:
+    name: Diabetes 130-US Hospitals
+    domain: healthcare
+    source: UCI Machine Learning Repository
+    local_files:
+      - data/raw/diabetes/diabetic_data.csv
+      - data/raw/diabetes/IDS_mapping.csv
+    target_column: readmitted
+    experiments: 21
+    redistribution_allowed: false
+
+  retail:
+    name: Online Retail II
+    domain: retail
+    source: UCI Machine Learning Repository
+    local_files:
+      - data/raw/online_retail/online_retail_II.xlsx
+    worksheet_names:
+      - "Year 2009-2010"
+      - "Year 2010-2011"
+    experiments: 21
+    redistribution_allowed: false
+
+evaluation:
+  outer_folds: 3
+  inner_folds: 3
+  random_seed: 42
+  split_level: experiment
+  stratified_when_applicable: true
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  figures: figures
+  tables: tables
+  results: results
