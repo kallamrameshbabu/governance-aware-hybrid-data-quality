@@ -1,7 +1,7 @@
 Metric,Comparison,Mean difference,95% bootstrap CI,Adjusted p-value,Significance
-F1,Hybrid V3 − AI consensus,-0.0254,"[-0.0748, 0.0187]",0.482,ns
-Precision,Hybrid V3 − AI consensus,0.0020,"[-0.0074, 0.0114]",0.581,ns
-Recall,Hybrid V3 − AI consensus,-0.0393,"[-0.1009, 0.0155]",1.000,ns
-False Positive Rate,Hybrid V3 − AI consensus,0.0133,"[0.0081, 0.0186]",<0.001,***
-False Positive Rate,Hybrid V3 − Hybrid V1,-0.0566,"[-0.0656, -0.0469]",<0.001,***
-F1,Hybrid V3 − Rule-only,0.2419,"[0.1924, 0.2951]",<0.001,***
+F1,Hybrid V3 − AI consensus,-0.0113,"[-0.0594, 0.0333]",1.000,ns
+Precision,Hybrid V3 − AI consensus,0.0191,"[-0.0285, 0.0602]",0.006,**
+Recall,Hybrid V3 − AI consensus,-0.0877,"[-0.1339, -0.0439]",0.039,*
+False Positive Rate,Hybrid V3 − AI consensus,-0.0518,"[-0.0688, -0.0359]",<0.001,***
+False Positive Rate,Hybrid V3 − Hybrid V1,-0.0368,"[-0.0470, -0.0270]",<0.001,***
+F1,Hybrid V3 − Rule-only,-0.0210,"[-0.1178, 0.0752]",1.000,ns
