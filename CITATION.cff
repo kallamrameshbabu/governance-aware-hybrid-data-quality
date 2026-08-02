@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-title: "Governance-Aware Hybrid Decision Fusion for Data Quality Anomaly Detection in Cloud Lakehouses: A Multi-Domain Evaluation"
-message: "If you use this repository in your research, please cite the accompanying manuscript."
+title: "Governance-Aware Evidence Fusion for Data-Quality Decisions: An Implemented Multi-Domain Evaluation of Anomaly Coverage and Review-Burden Trade-offs"
+message: "If you use this repository in your research, please cite the accompanying manuscript and software artifact."
 type: software
 
 authors:
@@ -9,23 +9,24 @@ authors:
     orcid: "https://orcid.org/0009-0008-5220-1775"
 
 repository-code: "https://github.com/kallamrameshbabu/governance-aware-hybrid-data-quality"
-
 license: Apache-2.0
 
 keywords:
   - Data Quality
   - Data Governance
-  - Hybrid AI
+  - Evidence Fusion
   - Anomaly Detection
-  - Cloud Lakehouse
-  - Knowledge Engineering
-  - Decision Support
+  - Decision Policy
+  - Review Burden
+  - Auditability
+  - Lakehouse-Compatible Architecture
 
 abstract: >
-  Governance-aware hybrid decision fusion framework integrating deterministic
-  business rules, unsupervised anomaly detection, AI consensus,
-  and uncertainty estimation for enterprise data quality management.
+  An implemented governance-aware decision layer that combines deterministic
+  rule risk, detector consensus, detector voting, and evidence uncertainty.
+  The artifact evaluates a calibrated detection operating point and a full
+  governed-routing operating point across 63 controlled experiments in
+  finance, healthcare, and retail.
 
-version: "1.0.0"
-
-date-released: 2026-07-27
+version: "2.0.0"
+date-released: 2026-08-02

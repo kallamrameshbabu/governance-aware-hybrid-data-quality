@@ -1,0 +1,33 @@
+{
+  "policy_version": "HYBRID_ROUTING_POLICY_V3.0_UNIFIED",
+  "description": "Unified calibrated evidence-fusion and governed-routing policy.",
+  "weights": {
+    "rule_risk": 0.2,
+    "detector_consensus": 0.55,
+    "detector_vote": 0.2,
+    "uncertainty": 0.05
+  },
+  "detection_threshold": 0.525,
+  "routing_precedence": [
+    {
+      "condition": "rule_severity >= 0.75",
+      "action": "QUARANTINE"
+    },
+    {
+      "condition": "any_rule_violation",
+      "action": "REPAIR"
+    },
+    {
+      "condition": "evidence_incomplete_or_uncertain",
+      "action": "ESCALATE"
+    },
+    {
+      "condition": "fused_risk >= 0.525",
+      "action": "QUARANTINE"
+    },
+    {
+      "condition": "otherwise",
+      "action": "ACCEPT"
+    }
+  ]
+}
